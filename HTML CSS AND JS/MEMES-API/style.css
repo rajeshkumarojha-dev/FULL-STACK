@@ -1,0 +1,103 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background: url(./image/5671166.jpg);
+    object-fit: cover;
+    object-position: center;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow-x: hidden;
+    text-align: center;
+}
+.container{
+    width: 550px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 2rem 2rem;
+    border-radius: 20px;
+    box-shadow: 0 0 20px black;
+}
+.image{
+    width: 380px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+}
+.image img{
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    box-shadow: 0 0 20px black;
+    border-radius: 20px;
+    background-position: center;
+    background-size: cover;
+}
+.title h3{
+    font-size: 24px;
+    margin-bottom: 20px;
+
+}
+button{
+    padding: 10px 20px;
+    background-color: orangered;
+    color: white;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+    box-shadow: 0 0 20px black;
+}
+.welcome{
+    position: absolute;
+    writing-mode:vertical-lr;
+    left: 220px;
+    font-size: 80px;
+    color: white;
+    animation: animate 2s infinite;
+}
+.meme{
+    position: absolute;
+    writing-mode:vertical-lr;
+    right: 220px;
+    font-size: 80px;
+    color: white;
+    animation: animate 2s infinite;
+}
+@keyframes animate{
+    100%{
+        rotate: 360deg;
+    }
+}
+
+@media(max-width:1499px){
+    .welcome{
+        display: none;
+    }
+    .meme{
+        display: none;
+    }
+}
+@media(max-width:480px){
+    .container{
+        width: 100%;
+        padding: 1rem;
+    }
+    .image{
+        width: 100%;
+        margin-bottom: 20px;
+        border-radius: 20px;
+    }
+   
+}

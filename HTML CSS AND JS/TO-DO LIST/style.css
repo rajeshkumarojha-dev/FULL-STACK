@@ -1,0 +1,78 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+
+}
+.container{
+    background-color: orangered;
+    box-shadow: 0 0 20px black;
+    border-radius: 20px;
+    padding: 20px;
+}
+.container .text{
+    background-color: white;
+    border-radius: 10px;
+    
+}
+.container input{
+    padding: 10px 20px;
+    background-color: orangered;
+    outline: none;
+    border: 2px solid white;
+    color: white;
+    font-size: 20px;
+}
+::placeholder{
+    color: white;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+.container button{
+    padding: 10px 20px;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    color: orangered;
+    font-weight: 900;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+p{
+    margin-top: 20px;
+    position: relative;
+}
+li{
+    /* margin-top: ; */
+    padding: 10px;
+    list-style: none;
+    margin-block: 15px;
+    background-color: white;
+    box-shadow: 0 0 10px #8f8f8f;
+    border-radius: 10px;
+    position: relative;
+}
+.delete{
+    position: absolute;
+    right: 10px;
+
+    cursor: pointer;
+    color: orangered;
+    top: -10px;
+    font-weight: 900;
+}
+
+@media(max-width: 426px){
+    .container input {
+        width: 70%;
+        padding: 10px;
+    }
+}

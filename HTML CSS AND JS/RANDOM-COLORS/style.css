@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    padding: 2rem ;
+}
+h1{
+    text-align: center;
+    margin-bottom: 2rem;
+}
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+.colors{
+    width: 120px;
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    color: white;
+    border-radius: 20px;
+}
+.colors h5{
+    text-transform: uppercase;
+}
+.colors h6{
+    margin-top: 10px;
+    font-size: 15px;
+    text-transform: uppercase;
+}
