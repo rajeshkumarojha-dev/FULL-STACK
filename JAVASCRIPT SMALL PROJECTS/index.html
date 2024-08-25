@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class Teacher{
+            constructor(tid,tname,tsalery){
+                this.id = tid;
+                this.name = tname;
+                this.salery = tsalery;
+            }
+        }
+        class Principal extends Teacher{
+            constructor(tprofit,tid,tname,tsalery){
+                super(tid,tname,tsalery)
+                this.profit = tprofit;
+            }
+        }
+        let Principal1 = new Principal(5000,1,"raj",2000)
+        console.log(Principal1)
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>
