@@ -87,9 +87,20 @@ select {
     margin-top: 10px;
     font-size: 16px;
 }
+
+.cartItem{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.cartItem img{
+  height: 100px;
+  width: 100px;
+}
 a{
     text-decoration: none;
 }
 footer{
     text-transform: uppercase;
 }
+

@@ -40,22 +40,16 @@
         </div>
       </nav>
     </header>
-    <main>
-      <h1 class="text-center">Product List</h1>
-
-      <div class="container">
-        <div class="search mb-auto">
-          <input
-            type="text"
-            class="search-product"
-            placeholder="Search Products"
-          />
-          <button class="Search-btn btn btn-primary ms-2">Search</button>
-        </div>
-            <select name="cat" id="cat"></select>
-            <div id="productsList" ></div>
+   <main>
+        <h1 class=" text-center">cart List</h1>
+      <div class="container my-5">
+         
+          <div id="cartList"></div>
+          <div>
+            Total: <span id="total"></span>
+          </div>
       </div>
-    </main>
+       </main>
     <footer class="bg-black text-white px-5 py-5 text-center">
       This site Belongs to <span class="text-primary">Rajesh</span> &copy; 2024
     </footer>
@@ -64,8 +58,9 @@
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
-    <script src="./script.js"></script>
+    
     <script src="./product.js"></script>
+    <script src="./cart.js"></script>
     <script src="./common.js"></script>
   </body>
 </html>
